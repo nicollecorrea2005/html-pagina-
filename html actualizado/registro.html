@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: 'Work Sans';
+            background:  #F6F6F6; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100rem;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .formulario {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007832;
+            margin-bottom: 20px;
+        }
+
+        .campo label {
+        
+            color: #007832;
+            font-weight: bold;
+            margin-bottom: .5rem;
+            display: block;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-text {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .boton {
+            background-color: #007832;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .boton:hover {
+            background-color: #39A900;
+        }
+
+        .enviar {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="formulario">
+        <h2>Registro</h2>
+        <div class="campo">
+            <label>Nombre Completo</label>
+            <input class="input-text" type="text" placeholder="Ingrese su nombre completo" required>
+        </div>
+        <div class="campo">
+            <label>Correo Electrónico</label>
+            <input class="input-text" type="email" placeholder="Ingrese su correo electrónico" required>
+        </div>
+        <div class="campo">
+            <label>Contraseña</label>
+            <input class="input-text" type="password" placeholder="Cree una contraseña" required>
+        </div>
+        <div class="campo">
+            <label>Confirmar Contraseña</label>
+            <input class="input-text" type="password" placeholder="Confirme su contraseña" required>
+        </div>
+        <div class="enviar">
+            <input class="boton" type="submit" value="Registrarse">
+        </div>
+        <footer class="footer-text">
+            <div>¿Ya tienes cuenta? <a href="iniciosesion.html">Inicia sesion aquí</a></div>
+        </footer>
+    </form>
+    
+</body>
+</html>
